@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A250628-D083-4A83-876F-FE532BD6CDD7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mr_2C</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B9B90F9BFF370DEF8DC50D8A7780A47944F9DC1C</key>
+		<string>https://github.com/Leff-isonfire/Simple-BLE-Central-implement.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mr_2C.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B9B90F9BFF370DEF8DC50D8A7780A47944F9DC1C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Leff-isonfire/Simple-BLE-Central-implement.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B9B90F9BFF370DEF8DC50D8A7780A47944F9DC1C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B9B90F9BFF370DEF8DC50D8A7780A47944F9DC1C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mr_2C</string>
+		</dict>
+	</array>
+</dict>
+</plist>
