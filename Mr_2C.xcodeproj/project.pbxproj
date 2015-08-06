@@ -13,6 +13,7 @@
 		9686F4371B539BA800EB75EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9686F4361B539BA800EB75EC /* Images.xcassets */; };
 		9686F43A1B539BA800EB75EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9686F4381B539BA800EB75EC /* LaunchScreen.xib */; };
 		9686F4461B539BA800EB75EC /* Mr_2CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686F4451B539BA800EB75EC /* Mr_2CTests.swift */; };
+		9686F4501B53A60A00EB75EC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9686F44F1B53A60A00EB75EC /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9686F43F1B539BA800EB75EC /* Mr_2CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mr_2CTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9686F4441B539BA800EB75EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9686F4451B539BA800EB75EC /* Mr_2CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mr_2CTests.swift; sourceTree = "<group>"; };
+		9686F44F1B53A60A00EB75EC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9686F4501B53A60A00EB75EC /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		9686F4211B539BA800EB75EC = {
 			isa = PBXGroup;
 			children = (
+				9686F44F1B53A60A00EB75EC /* CoreBluetooth.framework */,
 				9686F42C1B539BA800EB75EC /* Mr_2C */,
 				9686F4421B539BA800EB75EC /* Mr_2CTests */,
 				9686F42B1B539BA800EB75EC /* Products */,
@@ -161,6 +165,11 @@
 				TargetAttributes = {
 					9686F4291B539BA800EB75EC = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					9686F43E1B539BA800EB75EC = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -409,6 +418,7 @@
 				9686F44B1B539BA800EB75EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9686F44C1B539BA800EB75EC /* Build configuration list for PBXNativeTarget "Mr_2CTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +427,7 @@
 				9686F44E1B539BA800EB75EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
