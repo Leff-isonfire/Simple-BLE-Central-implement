@@ -48,7 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBPeripheralDelegate, CBC
     
     func centralManagerDidUpdateState(central: CBCentralManager!) {
         
-//        centralManager.scanForPeripheralsWithServices([ transformStringToCBUUID(kServiceUUID) ], options: nil)
         var msg = ""
         switch (central.state) {
         case .PoweredOff:
@@ -80,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBPeripheralDelegate, CBC
     }
     
     func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
-        
+        //TODO: 可以通过advertisementData判断是不是Mr.K发出的蓝牙广播
         println(peripheral.name)
         if(peripheral.name == "“Leff”的 iPad") {
             println("Connecting to Leff")
@@ -90,19 +89,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBPeripheralDelegate, CBC
         } else {
             println("skipped " + peripheral.name )
         }
-//        self.centralManager.connectPeripheral(peripheral, options: [CBConnectPeripheralOptionNotifyOnConnectionKey:"peripheralOptionNotifyOnConnectionKey"])
         
     }
     
     func centralManager(central: CBCentralManager!, didConnectPeripheral peripheral: CBPeripheral!) {
         
-//        let characteristic1:CBUUID = CBUUID.init(string: kCharacteristicUUID_1)
-//        let characteristic2:CBUUID = CBUUID.init(string: kCharacteristicUUID_2)
-//        let characteristic3:CBUUID = CBUUID.init(string: kCharacteristicUUID_3)
-//        
-//        var characteristicArray:[CBUUID] = [characteristic1,characteristic2,characteristic3]
-        
-//        peripheral.discoverCharacteristics(characteristicArray, forService:peripheral.services.first as! CBService )
         peripheral.delegate = self
         peripheral.discoverServices([ transformStringToCBUUID(kServiceUUID) ])
         
@@ -119,19 +110,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBPeripheralDelegate, CBC
         
         var characteristicArray:[CBUUID] = [characteristic1,characteristic2,characteristic3]
         
-//        CBService.init(UUID: transformStringToCBUUID(kServiceUUID), primary: true)
-        
         peripheral.discoverCharacteristics(characteristicArray, forService:peripheral.services.first as! CBService )
         
     }
     
     func peripheral(peripheral: CBPeripheral!, didDiscoverCharacteristicsForService service: CBService!, error: NSError!) {
         
-//        var characteristicsToBeRead: [CBCharacteristic] = service.characteristics as! [CBCharacteristic]
-        
-//        for characteristicItem in characteristicsToBeRead {
-//            peripheral.readValueForCharacteristic(characteristicItem)
-//        }
         
         if let characteristicsToBeRead = service.characteristics  as? [CBCharacteristic]
         {
